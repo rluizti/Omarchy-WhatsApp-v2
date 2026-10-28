@@ -3,6 +3,7 @@ import QtQuick.Controls
 import Quickshell
 import Quickshell.Io
 import qs.Commons
+import qs.Commons as OmarchyCommons
 import qs.Ui
 import "DropdownModel.js" as DropdownModel
 import "AccountModel.js" as AccountModel
@@ -74,10 +75,10 @@ Panel {
   ]
 
   readonly property var barIdentity: hostWidget || root
-  readonly property color foreground: bar ? bar.foreground : Color.foreground
-  readonly property color background: Color.popups.background
-  readonly property color accent: Color.accent
-  readonly property color urgent: Color.urgent
+  readonly property color foreground: bar ? bar.foreground : OmarchyCommons.Color.foreground
+  readonly property color background: OmarchyCommons.Color.popups.background
+  readonly property color accent: OmarchyCommons.Color.accent
+  readonly property color urgent: OmarchyCommons.Color.urgent
   readonly property color muted: Qt.rgba(
     foreground.r * 0.60 + background.r * 0.40,
     foreground.g * 0.60 + background.g * 0.40,

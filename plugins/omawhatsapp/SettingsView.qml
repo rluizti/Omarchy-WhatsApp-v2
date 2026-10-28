@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import qs.Commons
+import qs.Commons as OmarchyCommons
 import qs.Ui
 import "Tint.js" as Tint
 
@@ -17,12 +18,12 @@ Rectangle {
   property var updates: null
   property bool demoMode: false
   property bool narrow: false
-  property color foreground: Color.foreground
-  property color background: Color.background
-  property color accent: Color.accent
+  property color foreground: OmarchyCommons.Color.foreground
+  property color background: OmarchyCommons.Color.background
+  property color accent: OmarchyCommons.Color.accent
   property color dim: foreground
   property color dimmer: foreground
-  property color urgent: Color.urgent
+  property color urgent: OmarchyCommons.Color.urgent
   property string fontFamily: Style.font.family
   signal closeRequested()
 

@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import qs.Commons
+import qs.Commons as OmarchyCommons
 import qs.Ui
 
 // Group control inside the details panel. Local data shows at once; the live
@@ -13,9 +14,9 @@ Column {
 
   property var service: null
   property string localRole: ""
-  property color foreground: Color.foreground
-  property color surface: Color.background
-  property color accent: Color.accent
+  property color foreground: OmarchyCommons.Color.foreground
+  property color surface: OmarchyCommons.Color.background
+  property color accent: OmarchyCommons.Color.accent
   property color muted: foreground
   property color urgent: "#e06c75"
   property string fontFamily: Style.font.family

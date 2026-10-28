@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import qs.Commons
+import qs.Commons as OmarchyCommons
 import qs.Ui
 import "TimeFormat.js" as TimeFormat
 
@@ -14,9 +15,9 @@ Rectangle {
   property var chat: null
   property bool loading: false
   property bool showAvatars: true
-  property color foreground: Color.foreground
-  property color surface: Color.background
-  property color accent: Color.accent
+  property color foreground: OmarchyCommons.Color.foreground
+  property color surface: OmarchyCommons.Color.background
+  property color accent: OmarchyCommons.Color.accent
   property color muted: foreground
   property string fontFamily: Style.font.family
   property var service: null

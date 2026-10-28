@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls
 import qs.Commons
+import qs.Commons as OmarchyCommons
 
 // WhatsApp's formatting options for the composer. Each row applies to the
 // selection (or the cursor, or the current line) and shows how the phone
@@ -10,9 +11,9 @@ Popup {
   id: root
   objectName: "formatMenu"
 
-  property color foreground: Color.foreground
-  property color surface: Color.background
-  property color accent: Color.accent
+  property color foreground: OmarchyCommons.Color.foreground
+  property color surface: OmarchyCommons.Color.background
+  property color accent: OmarchyCommons.Color.accent
   property color muted: foreground
   property string fontFamily: Style.font.family
   // Cut, copy, paste and select all above the formats (the right-click menu).
